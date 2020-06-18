@@ -1,0 +1,39 @@
+{
+	"name": "template",
+	"version": "0.1.0",
+	"main": "dist/node/index.js",
+	"module": "dist/index.js",
+	"browser": "dist/browser/index.js",
+	"license": "MIT",
+	"type": "module",
+	"devDependencies": {
+		"@babel/core": "^7.10.2",
+		"@pumpn/babel-preset": "^2.0.0",
+		"@pumpn/eslint-config": "^5.0.2",
+		"@rollup/plugin-babel": "^5.0.3",
+		"@rollup/plugin-commonjs": "^13.0.0",
+		"@rollup/plugin-json": "^4.1.0",
+		"@rollup/plugin-node-resolve": "^8.0.1",
+		"concurrently": "^5.2.0",
+		"eslint": "^7.2.0",
+		"rollup": "^2.17.0",
+		"rollup-plugin-clear": "^2.0.7",
+		"rollup-plugin-filesize": "^9.0.1",
+		"rollup-plugin-notify": "^1.1.0",
+		"rollup-plugin-progress": "^1.1.2",
+		"rollup-plugin-terser": "^6.1.0",
+		"rollup-plugin-visualizer": "^4.0.4"
+	},
+	"scripts": {
+		"build:module": "rollup  --config",
+		"build:node": "rollup  --config ./rollup/node/rollup.config.js",
+		"build:browser": "rollup  --config ./rollup/browser/rollup.config.js",
+		"build": "concurrently \"build:module\" \"build:node\" \"build:browser\"",
+		"start": "yarn build:module && node ./dist/index.js",
+		"docs": "rm -rf ./docs/ && jsdoc -c ./.jsdocrc -r --verbose",
+		"docs2": "rm -rf ./docs/ && documentation build src -f html -o docs --babel=babel.config.json"
+	},
+	"engines": {
+		"node": ">=14.x"
+	}
+}
