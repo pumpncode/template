@@ -951,10 +951,10 @@
     "@babel/plugin-syntax-module-attributes" "^7.10.2"
     "@babel/preset-env" "^7.10.2"
 
-"@pumpn/eslint-config@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@pumpn/eslint-config/-/eslint-config-5.0.2.tgz#eefdb4dcefbf55c5544b07a4e78b2e2da1a9999b"
-  integrity sha512-Ktm0BliPVlwyXuIQRrnBlrPJoA/kVNYso4wVxZveyIgIz67+ObtP1/po+VNi6FFoL7f7FQyqEH3vrwiEP/06Gg==
+"@pumpn/eslint-config@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@pumpn/eslint-config/-/eslint-config-6.0.0.tgz#123b074b82c324596aac04daa9b02baba2484878"
+  integrity sha512-tMFDBj4fX3Q1xRYJUcUoMnuFJP0rJyUXVH8A+EQqJWVmOF45UlINrNX6aoXIo+FBGtsMDIMMQmNh6AzDJgHyCA==
   dependencies:
     babel-eslint "^11.0.0-beta.2"
     confusing-browser-globals "^1.0.9"
