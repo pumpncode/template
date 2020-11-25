@@ -1,0 +1,72 @@
+
+.\" Process this file with
+.\" groff -man -Tutf8 doc.1
+.\"
+.TH template 1 "NOVEMBER 2020" "Pumpn Code" "User Manuals"
+.SH NAME
+\m[blue]template\m[] \- the basic repository template for pumpn code projects
+.SH SYNOPSIS
+.B template [-bar] [-c
+.I config-file
+.B ]
+.I file
+.B ...
+.SH DESCRIPTION
+.B template
+is the basic repository template for pumpn code projects
+and it's main use is creating more specific templates
+.SH OPTIONS
+.IP -b
+Do not write `busy' to stdout while processing.
+.IP "-c config-file"
+Use the alternate system wide
+.I config-file
+instead of
+.IR /etc/foo.conf .
+This overrides any
+.B FOOCONF
+environment variable.
+.IP -a
+In addition to the baz segments, also parse the
+blurfl headers.
+.IP -r
+Recursive mode. Operates as fast as lightning
+at the expense of a megabyte of virtual memory.
+.SH FILES
+.I /etc/foo.conf
+.RS
+The system wide configuration file. See
+.BR foo (5)
+for further details.
+.RE
+.I ~/.foorc
+.RS
+Per user configuration file. See
+.BR foo (5)
+for further details.
+.SH ENVIRONMENT
+.IP FOOCONF
+If non-null the full pathname for an alternate system wide
+.IR foo.conf .
+Overridden by the
+.B -c
+option.
+.SH DIAGNOSTICS
+The following diagnostics may be issued on stderr:
+ 
+Bad magic number.
+.RS
+The input file does not look like an archive file.
+.RE
+Old style baz segments.
+.RS
+.B foo
+can only handle new style baz segments. COBOL
+object libraries are not supported in this version.
+.SH BUGS
+The command name should have been chosen more carefully
+to reflect its purpose.
+.SH AUTHOR
+Nano Miratus <nanomiratus@gmail.com>
+.SH "SEE ALSO"
+.BR template (1)
