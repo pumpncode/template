@@ -1,39 +1,102 @@
 {
-	"name": "template",
+	"name": "@pumpn/template",
 	"version": "0.1.0",
-	"main": "dist/node/index.js",
-	"module": "dist/index.js",
-	"browser": "dist/browser/index.js",
+	"description": "the basic repository template for pumpn code projects",
+	"keywords": [
+		"template",
+		"pumpn code",
+		"boilerplate"
+	],
+	"homepage": "https://github.com/pumpncode/template#readme",
+	"bugs": {
+		"url": "https://github.com/pumpncode/template/issues",
+		"email": "project@hostname.com"
+	},
 	"license": "MIT",
+	"author": {
+		"name": "Nano Miratus",
+		"email": "nanomiratus@gmail.com",
+		"url": "https://pumpn.net/"
+	},
+	"contributors": [
+		{
+			"name": "Nano Miratus",
+			"email": "nanomiratus@gmail.com",
+			"url": "https://pumpn.net/"
+		}
+	],
+	"funding": [
+		{
+			"type": "individual",
+			"url": "https://paypal.me/nnmrts"
+		},
+		{
+			"type": "patreon",
+			"url": "https://www.patreon.com/nnmrts"
+		}
+	],
+	"files": [
+		"./src",
+		"./dist"
+	],
+	"main": "dist/index.node.cjs",
+	"browser": "dist/index.browser.js",
+	"module": "src/index.js",
 	"type": "module",
+	"exports": {
+		"import": "./src/index.js",
+		"require": "./dist/index.node.cjs"
+	},
+	"directories": {
+		"bin": "./bin",
+		"doc": "./docs",
+		"lib": "./src",
+		"man": "./man",
+		"example": "./examples",
+		"test": "./tests"
+	},
+	"repository": "pumpncode/template",
+	"scripts": {
+		"build:node": "rollup --config --silent --configNode",
+		"build:browser": "rollup --config --silent --configBrowser",
+		"build": "rollup --config --silent",
+		"build-verbose": "npm run build --configVerbose",
+		"start": "node ./src/index.js",
+		"start:node": "npm run build:node && node ./dist/index.node.cjs",
+		"doc:clear": "rm -rf ./docs/",
+		"doc:documentation": "documentation build src -f html -o docs --babel=.babelrc --config documentation.yml",
+		"doc": "npm run doc:clear && npm run doc:documentation",
+		"release": "np"
+	},
+	"config": {
+		"port": "9000"
+	},
 	"devDependencies": {
-		"@babel/core": "^7.10.2",
+		"@babel/core": "^7.12.9",
 		"@pumpn/babel-preset": "^2.0.0",
 		"@pumpn/eslint-config": "^6.0.0",
-		"@rollup/plugin-babel": "^5.0.3",
-		"@rollup/plugin-commonjs": "^13.0.0",
+		"@pumpn/np-config": "^1.0.0",
+		"@rollup/plugin-babel": "^5.2.1",
+		"@rollup/plugin-commonjs": "^16.0.0",
 		"@rollup/plugin-json": "^4.1.0",
-		"@rollup/plugin-node-resolve": "^8.0.1",
-		"concurrently": "^5.2.0",
-		"eslint": "^7.2.0",
-		"rollup": "^2.17.0",
-		"rollup-plugin-clear": "^2.0.7",
-		"rollup-plugin-filesize": "^9.0.1",
-		"rollup-plugin-notify": "^1.1.0",
+		"@rollup/plugin-node-resolve": "^10.0.0",
+		"concurrently": "^5.3.0",
+		"documentation": "^13.1.0",
+		"eslint": "^7.14.0",
+		"np": "^7.0.0",
+		"rollup": "^2.33.3",
+		"rollup-plugin-analyzer": "^3.3.0",
+		"rollup-plugin-delete": "^2.0.0",
+		"rollup-plugin-filesize": "^9.0.2",
 		"rollup-plugin-progress": "^1.1.2",
-		"rollup-plugin-terser": "^6.1.0",
-		"rollup-plugin-visualizer": "^4.0.4"
-	},
-	"scripts": {
-		"build:module": "rollup  --config",
-		"build:node": "rollup  --config ./rollup/node/rollup.config.js",
-		"build:browser": "rollup  --config ./rollup/browser/rollup.config.js",
-		"build": "concurrently \"build:module\" \"build:node\" \"build:browser\"",
-		"start": "yarn build:module && node ./dist/index.js",
-		"docs": "rm -rf ./docs/ && jsdoc -c ./.jsdocrc -r --verbose",
-		"docs2": "rm -rf ./docs/ && documentation build src -f html -o docs --babel=babel.config.json"
+		"rollup-plugin-terser": "^7.0.2",
+		"rollup-plugin-visualizer": "^4.2.0"
 	},
 	"engines": {
-		"node": ">=14.x"
+		"node": "^15",
+		"npm": "^7"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
