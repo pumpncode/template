@@ -1,13 +1,23 @@
+import hello from "./hello.js";
+import world from "./world.js";
+
 /**
  * This is a simple hello world function.
  *
  * @example
- * console.log(hello()); // logs "Hello World!"
+ * console.log(helloWorld()); // logs "Hello World!"
  */
-const hello = () => {
-	console.info("Hello World!");
+const helloWorld = () => {
+	const firstWord = hello();
+	const secondWord = world();
+
+	const words = [firstWord, secondWord];
+
+	const capitalizedWords = words.map((word) => `${word.charAt(0).toUpperCase()}${word.slice(1).toLowerCase()}`);
+
+	console.info(`${capitalizedWords.join(" ")}!`);
 };
 
-hello();
+helloWorld();
 
-export default hello;
+export default helloWorld;
