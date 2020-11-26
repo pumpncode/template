@@ -4,7 +4,7 @@
  *
  * @alias world
  * @returns {string}
- * The string "world".
+ * "world".
  * @example
  * console.log(world()); // logs "world"
  */

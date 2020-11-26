@@ -4,7 +4,7 @@
  *
  * @alias hello
  * @returns {string}
- * The string "hello".
+ * "hello".
  * @example
  * console.log(hello()); // logs "hello"
  */
