@@ -4,6 +4,8 @@ import world from "./world.js";
 /**
  * This is a simple hello world function.
  *
+ * @returns {string}
+ * "Hello World!".
  * @example
  * console.log(helloWorld()); // logs "Hello World!"
  */
@@ -15,9 +17,7 @@ const helloWorld = () => {
 
 	const capitalizedWords = words.map((word) => `${word.charAt(0).toUpperCase()}${word.slice(1).toLowerCase()}`);
 
-	console.info(`${capitalizedWords.join(" ")}!`);
+	return `${capitalizedWords.join(" ")}!`;
 };
-
-helloWorld();
 
 export default helloWorld;
