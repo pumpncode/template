@@ -67,7 +67,7 @@
 		"doc:documentation": "documentation build src -f html -o docs --babel=.babelrc --config documentation.yml",
 		"doc": "npm run doc:clear && npm run doc:documentation",
 		"lint:md": "markdownlint **/*.md --ignore node_modules",
-		"release": "npx np --no-cleanup --no-2fa",
+		"release": "np --no-cleanup --no-2fa",
 		"test": "ava --verbose"
 	},
 	"config": {
