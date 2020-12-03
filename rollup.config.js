@@ -96,15 +96,15 @@ export default (options) => {
 			json(),
 			progress(),
 			visualizer({
-				filename: `./statistics/${bundleName}/sun.html`,
+				filename: `./stats/${bundleName}/sun.html`,
 				template: "sunburst"
 			}),
 			visualizer({
-				filename: `./statistics/${bundleName}/tree.html`,
+				filename: `./stats/${bundleName}/tree.html`,
 				template: "treemap"
 			}),
 			visualizer({
-				filename: `./statistics/${bundleName}/net.html`,
+				filename: `./stats/${bundleName}/net.html`,
 				template: "network"
 			}),
 			filesize(),
