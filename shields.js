@@ -149,12 +149,14 @@ const references = [
 		"reddit",
 		`reddit/subreddit-subscribers/${subreddit}`,
 		subredditPage,
-		"reddit"
+		"reddit",
+		"r/pumpnuniverse"
 	],
 	[
 		"twitter",
 		"twitter/follow/PumpnUniverse",
 		twitterPage,
+		"twitter",
 		"twitter"
 	],
 	[
