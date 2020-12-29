@@ -1,7 +1,5 @@
 # <p align="center"><img src="./media/images/logotransparent.png" title="template" alt="template logo" height="200px"></p>
 
-the basic repository template for pumpn code projects
-
 [![stargazers][stars-shield]][stars-url]
 [![contributors][contributors-shield]][contributors-url]
 [![forks][forks-shield]][forks-url]
@@ -28,47 +26,20 @@ the basic repository template for pumpn code projects
 [![website][website-shield]][website-url]
 [![hsts][hsts-shield]][hsts-url]
 
+The basic repository template for pumpn code projects
+
 ## Table of Contents
 
-1. [About template](#about-the-project)
-	1. Built with
-2. Getting Started
-	1. Prerequisites
-	2. Installation
-3. Usage
-4. Roadmap
-5. Contributing
-6. License
-7. Contact
-8. Acknowledgements
-
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-	<summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-	<ol>
-		<li>
-			<a href="#about-the-project">About The Project</a>
-			<ol>
-				<li><a href="#built-with">Built With</a>
-				</li>
-			</ol>
-		</li>
-		<li>
-			<a href="#getting-started">Getting Started</a>
-			<ol>
-				<li><a href="#prerequisites">Prerequisites</a></li>
-				<li><a href="#installation">Installation</a></li>
-			</ol>
-		</li>
-		<li><a href="#usage">Usage</a></li>
-		<li><a href="#roadmap">Roadmap</a></li>
-		<li><a href="#contributing">Contributing</a></li>
-		<li><a href="#license">License</a></li>
-		<li><a href="#contact">Contact</a></li>
-		<li><a href="#acknowledgements">Acknowledgements</a></li>
-	</ol>
-</details>
+1. [About The Project](#about-the-project)
+2. [Getting Started](#getting-started)
+    1. [Prerequisites](#prerequisites)
+    2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Roadmap](#roadmap)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Contact](#contact)
+8. [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -77,34 +48,93 @@ the basic repository template for pumpn code projects
 	<img src="./media/images/banner.png" title="template" alt="template logo" height="200px">
 </p>
 
-### Built With
+This is the main template repository for all our projects and the origin of all the other templates, which is why it should only rarely be used directly. It only includes the very basic structure and a couple of important so-called dotfiles.
 
-* []()
-* []()
-* []()
+---
+
+This readme uses emoji suffixes in some cases to possibly accelerate your setup process by highlighting options you may or may not want to take into consideration:
+
+- The suffix 💎 identifies a not always mandatory but recommended option or extra-step.
+- The suffix 🤡 identifies a possible but in the context of this project a usually inconvenient option that should only be considered if it's really unavoidable.
+- The suffixes 🍎 (macOS), 🪟 (Windows and [WSL](https://docs.microsoft.com/en-us/windows/wsl/about)) and 🐧 (Linux) identify platform-specific information or installation steps.
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+If you're a developer, you'll probably already have those or working alternatives, so feel free to skip to the [Installation](#installation) section if you're sure you have everything to get started. Also, this guide assumes you already have [Windows](https://www.microsoft.com/windows), or a unix or unix-like operating system (like [macOS](https://www.apple.com/macos) for example) and a [modern browser](https://browsehappy.com/) installed. This project should work on every imaginable modern system configuration, but your best bet would be to use a well established and popular one.
 
-* npm
+- [GitHub Account](https://github.com/join) 💎
+- [Homebrew](https://brew.sh/) 🍎
 
 	```sh
-	npm install npm@latest -g
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	```
+
+- [Git](https://git-scm.com/)
+	- [macOS](https://git-scm.com/download/mac) 🍎
+		- Homebrew 💎
+
+			```sh
+			brew install git
+			```
+		
+		- [Binary Installer](https://sourceforge.net/projects/git-osx-installer/)
+		- [Through Xcode](https://developer.apple.com/xcode/) 🤡
+			> Installing git through Xcode, which was a dozen gigabytes large and took an hour to setup last time I checked, is a [Pyrrhic victory](https://en.wikipedia.org/wiki/Pyrrhic_victory). If you already have Xcode, I guess it's fine to use "their" git though.
+	- [Windows](https://git-scm.com/download/win) 🪟
+	- [Linux](https://git-scm.com/download/linux) 🐧
+
+- [Node.js](https://nodejs.org/)
+	- Install through [nvm](https://github.com/nvm-sh/nvm) 💎
+		- macOS, Linux & WSL 💎
+			1. Install [nvm](https://github.com/nvm-sh/nvm)
+
+				```sh
+				curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+				```
+
+			2. Install the latest Node.js
+
+				```sh
+				nvm install node
+				````
+		
+		- Windows 🪟
+			1. Install [nvm-windows](https://github.com/coreybutler/nvm-windows)
+			2. Install the latest Node.js
+
+				```sh
+				nvm install latest
+				```
+
+	- [Download and install directly](https://nodejs.org/en/download/current/)
 
 ### Installation
 
-1. Clone the repo
+1. Get the template
+	- Create a new repository from template 💎
+		1. Click "Use this template"
+			![Screenshot of "Use this template" button](./media/images/screenshot-use-template.png)
 
-	 ```sh
-	 git clone https://github.com/pumpncode/template.git
-	 ```
+		2. Fill in the details, check "Include all branches" and click "Create repository from template"
+			![Screenshot of Create a new repository from template screen](./media/images/screenshot-create-from-template.png)
+
+	- Create a new repository by cloning 🤡
+		> This totally defeats the purpose of the GitHub template feature, because it not only clones the base repository, but inherits all of the features specific to GitHub. By simply cloning, you'll lose all of that.
+
+		1. Clone this repository into a new folder
+
+			```sh
+			git clone https://github.com/pumpncode/template.git my-new-repository
+			```
+
+		2. Go into that folder
+
+			```sh
+			cd my-new-repository
+			```
 
 2. Install NPM packages
 
@@ -185,9 +215,9 @@ Project Link: [https://github.com/pumpncode/template](https://github.com/pumpnco
 [version-url]: https://npmjs.com/package/@pumpn/template
 [node-shield]: https://img.shields.io/node/v/@pumpn/template?color=white&labelColor=black&logo=node.js&logoColor=white&style=flat
 [node-url]: https://nodejs.org
-[reddit-shield]: https://img.shields.io/reddit/subreddit-subscribers/pumpnuniverse?color=white&labelColor=black&logo=reddit&logoColor=white&style=flat
+[reddit-shield]: https://img.shields.io/reddit/subreddit-subscribers/pumpnuniverse?color=white&label=r/pumpnuniverse&labelColor=black&logo=reddit&logoColor=white&style=flat
 [reddit-url]: https://reddit.com/r/pumpnuniverse
-[twitter-shield]: https://img.shields.io/twitter/follow/PumpnUniverse?color=white&labelColor=black&logo=twitter&logoColor=white&style=flat
+[twitter-shield]: https://img.shields.io/twitter/follow/PumpnUniverse?color=white&label=twitter&labelColor=black&logo=twitter&logoColor=white&style=flat
 [twitter-url]: https://twitter.com/PumpnUniverse
 [discord-shield]: https://img.shields.io/discord/781324491182571530?color=white&label=discord&labelColor=black&logo=discord&logoColor=white&style=flat
 [discord-url]: https://discord.gg/WKvpetegZq
