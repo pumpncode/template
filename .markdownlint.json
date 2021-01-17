@@ -5,5 +5,8 @@
 	"no-hard-tabs": false,
 	"ul-indent": {
 		"indent": 1
+	},
+	"no-duplicate-heading": {
+		"siblings_only": true
 	}
 }
