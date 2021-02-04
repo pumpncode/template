@@ -1,9 +1,0 @@
-{
-	"extends": [
-		"./.eslintrc"
-	],
-	"rules": {
-		"no-magic-numbers": "off",
-		"import/no-unused-modules": "off"
-	}
-}
