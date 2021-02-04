@@ -1,7 +1,8 @@
 /**
- * 1.	replace all the relevant constants and (if your project has a website) replace ./media/images/websitelogo.png with a favicon-ish (< 50px) logo
- * 2.	run `node badges.js` (which adds all these shield references to your readme.md)
- * 3.	delete this file and ./media/images/websitelogo.png unless you really need them again
+ * 1.	Replace all the relevant constants and (if needed)
+ * 		replace ./media/images/websitelogo.png with a favicon-ish (< 50px) logo
+ * 2.	Run `node badges.js` (which adds all these shield references to your readme.md)
+ * 3.	Delete this file and ./media/images/websitelogo.png unless you really need them again.
  */
 import fs from "fs";
 
