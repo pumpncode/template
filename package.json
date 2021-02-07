@@ -87,7 +87,6 @@
 		"documentation": "^13.1.1",
 		"eslint": "^7.19.0",
 		"markdownlint-cli": "^0.26.0",
-		"np": "^7.3.0",
 		"rollup": "^2.38.5",
 		"rollup-plugin-analyzer": "^4.0.0",
 		"rollup-plugin-delete": "^2.0.0",
