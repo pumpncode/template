@@ -1,6 +1,6 @@
 <!-- logo -->
 <h1 align="center">
-	<img src="./media/images/logo.svg" title="template" alt="logo" height="200px">
+	<img src="./media/images/logocolored.svg" title="template" alt="logo" height="200px">
 </h1>
 
 <!-- t9n -->
