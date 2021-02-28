@@ -22,7 +22,9 @@
 		{
 			"name": "Nano Miratus",
 			"email": "nanomiratus@gmail.com",
-			"url": "https://pumpn.net/"
+			"url": "https://pumpn.net/",
+			"github": "https://github.com/nnmrts",
+			"twitter": "https://twitter.com/nnmrts"
 		}
 	],
 	"funding": [
