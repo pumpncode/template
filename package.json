@@ -39,15 +39,15 @@
 	],
 	"files": [
 		"./source",
-		"./dist"
+		"./build"
 	],
-	"main": "dist/index.node.cjs",
-	"browser": "dist/index.browser.js",
+	"main": "build/index.node.cjs",
+	"browser": "build/index.browser.js",
 	"module": "source/index.js",
 	"type": "module",
 	"exports": {
 		"import": "./source/index.js",
-		"require": "./dist/index.node.cjs"
+		"require": "./build/index.node.cjs"
 	},
 	"directories": {
 		"bin": "./bin",
@@ -63,7 +63,7 @@
 		"build": "rollup --config --silent",
 		"build-verbose": "npm run build --configVerbose",
 		"start": "node ./source/index.js",
-		"start:node": "npm run build:node && node ./dist/index.node.cjs",
+		"start:node": "npm run build:node && node ./build/index.node.cjs",
 		"docs:api": "node ./docs/api.js",
 		"docs": "node ./docs/construct.js",
 		"lint:md": "markdownlint **/*.md --ignore node_modules",

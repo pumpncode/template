@@ -37,7 +37,7 @@ const outputs = Object.fromEntries(Object.entries({
 		{
 			banner: bundleName === "browser" ? getLicense : null,
 			exports: "auto",
-			file: `./dist/index.${bundleName}.${format === "cjs" ? "cjs" : "js"}`,
+			file: `./build/index.${bundleName}.${format === "cjs" ? "cjs" : "js"}`,
 			format,
 			name: packageName.replace(/^@(.*?)\W/, ""),
 			preferConst: true,
@@ -49,7 +49,7 @@ const outputs = Object.fromEntries(Object.entries({
 
 outputs.browser.push({
 	...outputs.browser[0],
-	file: "./dist/index.browser.min.js",
+	file: "./build/index.browser.min.js",
 	plugins: [terser()]
 });
 
@@ -87,7 +87,7 @@ export default (options) => {
 		output: outputs[bundleName],
 		plugins: [
 			del({
-				targets: `./dist/index.${bundleName}.js`
+				targets: `./build/index.${bundleName}.js`
 			}),
 			babel({
 				babelHelpers: "bundled"
