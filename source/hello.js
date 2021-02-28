@@ -3,6 +3,7 @@
  * This function generates the string "hello".
  *
  * @alias hello
+ * @private
  * @returns {string}
  * "hello".
  * @example

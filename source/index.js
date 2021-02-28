@@ -2,7 +2,7 @@ import hello from "./hello.js";
 import world from "./world.js";
 
 /**
- * This is a simple hello world function.
+ * This is a hello world function.
  *
  * @returns {string}
  * "Hello World!".
