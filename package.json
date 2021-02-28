@@ -36,21 +36,21 @@
 		}
 	],
 	"files": [
-		"./src",
+		"./source",
 		"./dist"
 	],
 	"main": "dist/index.node.cjs",
 	"browser": "dist/index.browser.js",
-	"module": "src/index.js",
+	"module": "source/index.js",
 	"type": "module",
 	"exports": {
-		"import": "./src/index.js",
+		"import": "./source/index.js",
 		"require": "./dist/index.node.cjs"
 	},
 	"directories": {
 		"bin": "./bin",
 		"doc": "./docs",
-		"lib": "./src",
+		"lib": "./source",
 		"man": "./man",
 		"example": "./examples",
 		"test": "./tests"
@@ -61,7 +61,7 @@
 		"build:browser": "rollup --config --silent --configBrowser",
 		"build": "rollup --config --silent",
 		"build-verbose": "npm run build --configVerbose",
-		"start": "node ./src/index.js",
+		"start": "node ./source/index.js",
 		"start:node": "npm run build:node && node ./dist/index.node.cjs",
 		"doc:clear": "rm -rf ./docs/",
 		"doc:documentation": "documentation build src -f md -o ./docs/api.md --babel=.babelrc --config documentation.yml",
