@@ -51,7 +51,6 @@
 		"bin": "./bin",
 		"doc": "./docs",
 		"lib": "./source",
-		"man": "./man",
 		"example": "./examples",
 		"test": "./tests"
 	},
