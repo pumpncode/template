@@ -97,7 +97,7 @@ for (const t9nFolderName of t9nFolderNames) {
 		markdownlintConfigPath,
 		path: readmePath,
 		processor: mainProcessor,
-		readmeText
+		text: readmeText
 	});
 
 	await writeFile(readmePath, readmeText);
@@ -107,9 +107,9 @@ for (const t9nFolderName of t9nFolderNames) {
 
 		const rootText = await transformMain({
 			markdownlintConfigPath,
-			path: readmePath,
+			path: rootPath,
 			processor: rootProcessor,
-			readmeText
+			text: readmeText
 		});
 
 		await writeFile(rootPath, rootText);
