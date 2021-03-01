@@ -1,6 +1,6 @@
 # Mitwirken
 
-Jegliches Mitwirken ist **sehr geschätzt**.
+Jegliches Mitwirken wird **sehr geschätzt**.
 
 Siehe [contributing.md](../../../.github/contributing.md) um loszulegen.
 Siehe [support.md](../../../.github/support.md) um Hilfe zu bekommen.
