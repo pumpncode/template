@@ -16,8 +16,9 @@ import {
 	listIndent,
 	shiftPaths
 } from "../plugins.js";
-
-import createPreset from "./preset.js";
+import {
+	formattingOptions
+} from "../plugins/remark.js";
 
 const modulePath = fileURLToPath(import.meta.url);
 
@@ -27,9 +28,7 @@ const sourcePath = resolve(moduleFolder, "../../en/");
 const rootPath = resolve(moduleFolder, "../../../");
 
 const root = remark()
-	.use(createPreset({
-		language: "en"
-	}))
+	.use(formattingOptions)
 	.use(referenceLinks)
 	.use(shiftPaths, {
 		from: sourcePath,
