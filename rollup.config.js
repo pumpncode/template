@@ -83,7 +83,7 @@ export default (options) => {
 	} = options;
 
 	return activeBundles.map((bundleName) => ({
-		input: "./src/index.js",
+		input: "./source/index.js",
 		output: outputs[bundleName],
 		plugins: [
 			del({
