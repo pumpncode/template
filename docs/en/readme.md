@@ -178,33 +178,32 @@ See the [current projects][60] and the [open issues][61] for a list of proposed 
 Any contributions you make are **greatly appreciated**.
 
 See [contributing.md][62]  for ways to get started.
-See [support.md][63] for ways to get help.
 
-This project has a [code of conduct][64]. By interacting with this repository you agree to follow its terms.
+This project has a [code of conduct][63]. By interacting with this repository you agree to follow its terms.
 
 ## Contact
 
-Pumpn Code - [office@pumpn.net][65]
+Pumpn Code - [office@pumpn.net][64]
 
-Nano Miratus - [@nnmrts][66] - [nanomiratus@gmail.com][67]
+Nano Miratus - [@nnmrts][65] - [nanomiratus@gmail.com][66]
 
-Project Link: [https://github.com/pumpncode/template][68]
+Project Link: [https://github.com/pumpncode/template][67]
 
 ## Acknowledgments
 
-- [unified][69]
-- [remark][70]
-- [Best-README-Template][71]
+- [unified][68]
+- [remark][69]
+- [Best-README-Template][70]
 
 ## Contributors
 
 | Name             | Website                  | GitHub            | Twitter           |
 | ---------------- | ------------------------ | ----------------- | ----------------- |
-| **Nano Miratus** | [https://pumpn.net/][72] | [**@nnmrts**][73] | [**@nnmrts**][74] |
+| **Nano Miratus** | [https://pumpn.net/][71] | [**@nnmrts**][72] | [**@nnmrts**][73] |
 
 ## License
 
-[MIT][75] © [Pumpn Code][76]
+[MIT][74] © [Pumpn Code][75]
 
 [1]: https://github.com/pumpncode/template/stargazers
 [2]: https://badgen.net/github/stars/pumpncode/template?color=00f&labelColor=d07&icon=github
@@ -268,17 +267,16 @@ Project Link: [https://github.com/pumpncode/template][68]
 [60]: https://github.com/pumpncode/template/projects
 [61]: https://github.com/pumpncode/template/issues
 [62]: ../../.github/contributing.md
-[63]: ../../.github/support.md
-[64]: ../../.github/code_of_conduct.md
-[65]: mailto:office@pumpn.net
-[66]: https://twitter.com/nnmrts
-[67]: mailto:nanomiratus@gmail.com
-[68]: https://github.com/pumpncode/template
-[69]: https://unifiedjs.com/
-[70]: https://github.com/remarkjs
-[71]: https://github.com/othneildrew/Best-README-Template
-[72]: https://pumpn.net/
-[73]: https://github.com/nnmrts
-[74]: https://twitter.com/nnmrts
-[75]: ../../license.md
-[76]: https://pumpn.net/
+[63]: ../../.github/code-of-conduct.md
+[64]: mailto:office@pumpn.net
+[65]: https://twitter.com/nnmrts
+[66]: mailto:nanomiratus@gmail.com
+[67]: https://github.com/pumpncode/template
+[68]: https://unifiedjs.com/
+[69]: https://github.com/remarkjs
+[70]: https://github.com/othneildrew/Best-README-Template
+[71]: https://pumpn.net/
+[72]: https://github.com/nnmrts
+[73]: https://twitter.com/nnmrts
+[74]: ../../license.md
+[75]: https://pumpn.net/
