@@ -9,4 +9,6 @@
  * @example
  * console.log(world()); // logs "world"
  */
-export default () => "world";
+const world = () => "world";
+
+export default world;

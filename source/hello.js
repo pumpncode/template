@@ -9,4 +9,6 @@
  * @example
  * console.log(hello()); // logs "hello"
  */
-export default () => "hello";
+const hello = () => "hello";
+
+export default hello;
