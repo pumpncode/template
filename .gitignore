@@ -3,12 +3,28 @@
 ### Mostly from https://en.wikipedia.org/wiki/List_of_archive_formats
 
 ## Archiving only
+
 # The traditional archive format on Unix-like systems, now used mainly for the creation of static libraries.
 *.a
 *.ar
 # RPM files consist of metadata concatenated with (usually) a cpio archive. Newer RPM systems also support other archives, as cpio is becoming obsolete. cpio is also used with initramfs.
 *.cpio
-
+# It's better to unpack these files and commit the raw source because
+# git has its own built in compression methods.
+*.7z
+*.jar
+*.rar
+*.zip
+*.gz
+*.gzip
+*.tgz
+*.bzip
+*.bzip2
+*.bz2
+*.xz
+*.lzma
+*.cab
+*.xar
 # A self-extracting archive that uses the Bourne shell (sh).
 *.shar
 # A system for storing multiple files. LBR archives typically contained files processed by SQ, or the archive itself was compressed with SQ. LBR archives that were compressed with SQ ended with the extension .LQR	
@@ -35,25 +51,6 @@
 *.xpi
 # Ruby Package
 *.gem
-
-
-### Archives ###
-# It's better to unpack these files and commit the raw source because
-# git has its own built in compression methods.
-*.7z
-*.jar
-*.rar
-*.zip
-*.gz
-*.gzip
-*.tgz
-*.bzip
-*.bzip2
-*.bz2
-*.xz
-*.lzma
-*.cab
-*.xar
 
 # Packing-only formats
 
