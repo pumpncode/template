@@ -1,0 +1,16 @@
+# This is a comment.
+# Each line is a file pattern followed by one or more owners.
+
+* @pumpncode/core @pumpncode/security
+
+*.md @pumpncode/awareness @pumpncode/core @pumpncode/design @pumpncode/g11n @pumpncode/outreach
+
+/.github @pumpncode/awareness @pumpncode/outreach 
+/.github/code-of-conduct.md @pumpncode/awareness
+/.github/codeowners @pumpncode/core
+/.github/dependabot.yml @pumpncode/core @pumpncode/security
+/.github/funding.yml @pumpncode/core @pumpncode/outreach
+/docs/ @pumpncode/awareness @pumpncode/core @pumpncode/design @pumpncode/g11n
+/media/ @pumpncode/awareness @pumpncode/core @pumpncode/design
+/logo.svg @pumpncode/awareness @pumpncode/core @pumpncode/design
+/license.md @pumpncode/legal
