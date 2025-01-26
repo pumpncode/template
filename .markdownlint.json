@@ -8,5 +8,11 @@
 	},
 	"no-duplicate-heading": {
 		"siblings_only": true
+	},
+	"ul-style": {
+		"style": "dash"
+	},
+	"blanks-around-fences": {
+		"list_items": false
 	}
 }
