@@ -2,38 +2,7 @@
 
 [![logo of pumpncode/template][logo-wide]][self]
 
-🌐 Translations:
-
-[简体中文][readme-zh-cn] 🤖,
-[繁體中文][readme-zh-tw] 🤖,
-[粵語][readme-zh-hk] 🤖,
-[Español][readme-es] 🤖,
-**English**,
-[हिन्दी][readme-hi] 🤖,
-[বাংলা][readme-bn] 🤖,
-[Português][readme-pt] 🤖,
-[Русский][readme-ru] 🤖,
-[日本語][readme-ja] 🤖,
-[Tiếng Việt][readme-vi] 🤖,
-[Türkçe][readme-tr] 🤖,
-[मराठी][readme-mr] 🤖,
-[తెలుగు][readme-te] 🤖,
-[پنجابی][readme-pa-Arab] 🤖,
-[ਪੰਜਾਬੀ][readme-pa] 🤖,
-[한국어][readme-ko] 🤖,
-[தமிழ்][readme-ta] 🤖,
-[مصرى][readme-arz] 🤖,
-[Deutsch][readme-de] 🤖,
-[Français][readme-fr] 🤖
-
-[✍️ Contribute a translation][contribute-translation]
-
-> [!WARNING]
-> Languages marked with 🤖 are AI-generated translations and may contain inaccuracies. Contributions to improve these translations are welcome!
-
----
-
-This is the main template repository for our projects and the origin of every other template, which is why it shouldn't be used directly for end products. It includes the basic structure and important configuration files for a modern JavaScript project.
+This is the main template repository for our projects. It includes the basic structure and important configuration files for a modern JavaScript project.
 
 ---
 
@@ -139,27 +108,6 @@ Project Link: <https://github.com/pumpncode/template>
 
 [logo-wide]: /media/images/logo/wide.svg
 [self]: https://github.com/pumpncode/template
-[readme-zh-cn]: /docs/zh-CN/readme.md
-[readme-zh-tw]: /docs/zh-TW/readme.md
-[readme-zh-hk]: /docs/zh-HK/readme.md
-[readme-es]: /docs/es/readme.md
-[readme-hi]: /docs/hi/readme.md
-[readme-bn]: /docs/bn/readme.md
-[readme-pt]: /docs/pt/readme.md
-[readme-ru]: /docs/ru/readme.md
-[readme-ja]: /docs/ja/readme.md
-[readme-vi]: /docs/vi/readme.md
-[readme-tr]: /docs/tr/readme.md
-[readme-mr]: /docs/mr/readme.md
-[readme-te]: /docs/te/readme.md
-[readme-pa-Arab]: /docs/pa-Arab/readme.md
-[readme-pa]: /docs/pa/readme.md
-[readme-ko]: /docs/ko/readme.md
-[readme-ta]: /docs/ta/readme.md
-[readme-arz]: /docs/arz/readme.md
-[readme-de]: /docs/de/readme.md
-[readme-fr]: /docs/fr/readme.md
-[contribute-translation]: https://github.com/pumpncode/.github/blob/main/contributing.md#translations
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/about
 [installation]: #installation
 [windows]: https://www.microsoft.com/windows
