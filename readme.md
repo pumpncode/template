@@ -106,7 +106,7 @@ Project Link: <https://github.com/pumpncode/template>
 
 [0BSD][license] © [Pumpn Code][pumpn-website]
 
-[logo-wide]: /media/images/logo/wide.svg
+[logo-wide]: https://github.com/pumpncode/logos/raw/refs/heads/main/projects/template/wide.svg
 [self]: https://github.com/pumpncode/template
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/about
 [installation]: #installation
