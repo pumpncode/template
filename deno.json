@@ -1,7 +1,7 @@
 {
 	"tasks": {
 		"initialize": "deno run -R -W --allow-run=npm ./scripts/initialize.js",
-		"knip": "npx knip",
+		"upkeep": "deno run --allow-run=npx jsr:@pumpn/upkeep",
 		"lint": "npx eslint@9.14.0",
 		"start": "deno run --env main.js"
 	},
